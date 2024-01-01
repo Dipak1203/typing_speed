@@ -88,7 +88,7 @@ const App: React.FC = () => {
 
   return (
     <ChakraProvider>
-      <Center height="100vh" bg={"dark"}>
+      <Center height="100vh" style={{background:"black",color:"white"}}>
         <Box p={8} borderWidth={1} borderRadius="md">
           <Text fontSize="xl" mb={4}>
             Typing Speed Test
