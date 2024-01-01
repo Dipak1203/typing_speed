@@ -9,7 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { data } from './data';
 
-const TypingSpeedTest: React.FC = () => {
+const App: React.FC = () => {
   const [contentIndex, setContentIndex] = useState<number>(getRandomIndex());
   const [text, setText] = useState<string>('');
   const [startTime, setStartTime] = useState<Date | null>(null);
@@ -88,7 +88,7 @@ const TypingSpeedTest: React.FC = () => {
 
   return (
     <ChakraProvider>
-      <Center height="100vh">
+      <Center height="100vh" bg={"dark"}>
         <Box p={8} borderWidth={1} borderRadius="md">
           <Text fontSize="xl" mb={4}>
             Typing Speed Test
@@ -128,4 +128,4 @@ const TypingSpeedTest: React.FC = () => {
   );
 };
 
-export default TypingSpeedTest;
+export default App;
