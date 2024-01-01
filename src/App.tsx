@@ -10,13 +10,17 @@ import {
 import { data } from './data';
 
 const TypingSpeedTest: React.FC = () => {
-  const [contentIndex, setContentIndex] = useState<number>(0);
+  const [contentIndex, setContentIndex] = useState<number>(getRandomIndex());
   const [text, setText] = useState<string>('');
   const [startTime, setStartTime] = useState<Date | null>(null);
   const [endTime, setEndTime] = useState<Date | null>(null);
   const [charsTyped, setCharsTyped] = useState<number>(0);
   const [charStatus, setCharStatus] = useState<'white' | 'green' | 'red'[]>([]);
   const [isCorrect, setIsCorrect] = useState<boolean>(false);
+
+  function getRandomIndex() {
+    return Math.floor(Math.random() * data.length);
+  }
 
   useEffect(() => {
     setStartTime(null);
@@ -42,7 +46,7 @@ const TypingSpeedTest: React.FC = () => {
     const typedArray = inputValue.split('');
 
     // Check correctness for each character
-    const newCharStatus = charArray.map((char, index) => {
+    const newCharStatus :any= charArray.map((char, index) => {
       if (typedArray[index] === char) {
         return 'green';
       } else if (typedArray[index] === '' || typedArray[index] === undefined) {
@@ -52,7 +56,6 @@ const TypingSpeedTest: React.FC = () => {
       }
     });
 
-    // @ts-ignore
     setCharStatus(newCharStatus);
 
     // Update characters typed count
@@ -79,9 +82,8 @@ const TypingSpeedTest: React.FC = () => {
   const typingSpeed = calculateTypingSpeed();
 
   const handleNextContent = () => {
-    if (contentIndex < data.length - 1) {
-      setContentIndex(contentIndex + 1);
-    }
+    const randomIndex = getRandomIndex();
+    setContentIndex(randomIndex);
   };
 
   return (
