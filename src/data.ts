@@ -1,15 +1,15 @@
 export const data = [
   {
     content:
-      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.",
+      "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin, though it looks like it, and it actually says nothing, Before & After magazine answered a curious reader, Its words loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.",
   },
   {
     content:
-      "The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.",
+      "The placeholder text, beginning with the line Lorem ipsum dolor sit amet, consectetur adipiscing elit, looks like Latin because in its youth, centuries ago, it was Latin.",
   },
   {
     content:
-      "Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (“On the Extremes of Good and Evil”), a first-century B.C. text from the Roman philosopher Cicero.",
+      "Richard McClintock, a Latin scholar from Hampden-Sydney College, is credited with discovering the source behind the ubiquitous filler text. In seeing a sample of lorem ipsum, his interest was piqued by consectetur—a genuine, albeit rare, Latin word. Consulting a Latin dictionary led McClintock to a passage from De Finibus Bonorum et Malorum (On the Extremes of Good and Evil), a first-century B.C. text from the Roman philosopher Cicero.",
   },
   {
     content:
@@ -21,7 +21,7 @@ export const data = [
   },
   {
     content:
-      "McClintock's eye for detail certainly helped narrow the whereabouts of lorem ipsum's origin, however, the “how and when” still remain something of a mystery, with competing theories and timelines.",
+      "McClintock's eye for detail certainly helped narrow the whereabouts of lorem ipsum's origin, however, the how and when still remain something of a mystery, with competing theories and timelines.",
   },
   {
     content:
@@ -37,5 +37,11 @@ export const data = [
   },
   {
     content:"Dipak Kumal is Hero. I loved Dipak Kumal. Do you love Dipak Kumal ? If yes then Say 'Dipak Kumal is my Hero' . Thank you"
+  },
+  {
+    content:"Why don't scientists trust atoms? Because they make up everything! Parallel lines have so much in common. It's a shame they'll never meet."
+  },
+  {
+    content:"I told my wife she was drawing her eyebrows too high. She looked surprised."
   }
 ];
